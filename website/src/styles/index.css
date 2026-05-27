@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* Gallery carousel overrides */
+.gallery-carousel .slick-dots {
+  bottom: -50px;
+}
+.gallery-carousel .slick-dots li button:before {
+  font-size: 12px;
+  color: #2f4f2f;
+}
+.gallery-carousel .slick-dots li.slick-active button:before {
+  color: #ff6b35;
+}
+.gallery-carousel .slick-prev,
+.gallery-carousel .slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 10;
+}
+.gallery-carousel .slick-prev {
+  left: -50px;
+}
+.gallery-carousel .slick-next {
+  right: -50px;
+}
+.gallery-carousel .slick-prev:before,
+.gallery-carousel .slick-next:before {
+  font-size: 40px;
+  color: #2f4f2f;
+}
+@media (max-width: 768px) {
+  .gallery-carousel .slick-prev {
+    left: 10px;
+  }
+  .gallery-carousel .slick-next {
+    right: 10px;
+  }
+}
